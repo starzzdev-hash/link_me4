@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('fundooriginal.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 🔥 sobe tudo */
+  padding-top: 10px;       /* 🔥 deixa colado no topo */
+  position: relative;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px; /* 🔥 era 18px — sobe o conteúdo */
+  
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* LOGO */
+.logo {
+  width: 60vw;
+  max-width: 350px; /* 🔥 aumentada */
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.7));
+  margin-top: -10px; /* antes era 0 */  margin-bottom: 0;
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+  .logo {
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 1.8rem;
+  margin-top: -15px; /* 🔥 era -5px — sobe mais */
+}
+
+/* LINKS */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 🔥 era 18px — sobe os botões */
+  width: 100%;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  background:#00a759;
+  padding: 15px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* RODAPÉ */
+.footer {
+  font-size: 0.9rem;
+  margin-top: 0;   /* 🔥 era 5px — sobe mais */
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.9);
+}
